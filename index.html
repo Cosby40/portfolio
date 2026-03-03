@@ -3,15 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cosby Magezi | Portfolio</title>
+  <title>Cosby Magezi | IT Student & Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Add Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Add Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
- <header>
-  <h1>Sithembinkosi Cosby Magezi</h1>
-  <p>Final-year IT Student | Junior Software Developer (Web, Mobile & Databases)</p>
-
+<header>
+  <div class="header-content">
+    <h1>Sithembinkosi Cosby Magezi</h1>
+    <p class="subtitle">Final-year IT Student | Junior Software Developer</p>
+    <p class="focus">Web · Mobile · Databases</p>
+  </div>
+  
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
@@ -21,67 +28,93 @@
 </header>
 
 <main>
-  <section id="about">
-    <h2>About Me</h2>
-   <p>
-I am a final-year Information Technology student with hands-on experience in
-web, mobile, and database development. I enjoy building practical systems that
-solve real-world problems, especially in education and community-based environments.
-I have worked with HTML, CSS, JavaScript, C#, Flutter, and MySQL, and I am currently
-focused on becoming job-ready for junior software development roles.
-</p>
+  <section id="about" class="card">
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <p>
+      I am a final-year Information Technology student with hands-on experience in
+      web, mobile, and database development. I enjoy building practical systems that
+      solve real-world problems, especially in education and community-based environments.
+    </p>
+    <p>
+      I have worked with HTML, CSS, JavaScript, C#, Flutter, and MySQL, and I am currently
+      focused on becoming job-ready for junior software development roles.
+    </p>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>C#</li>
-      <li>Flutter & Dart</li>
-      <li>MySQL & Database Design</li>
-      <li>Git & GitHub</li>
-    </ul>
+  <section id="skills" class="card">
+    <h2><i class="fas fa-code"></i> Skills</h2>
+    <div class="skills-grid">
+      <span class="skill-tag">HTML5</span>
+      <span class="skill-tag">CSS3</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">C#</span>
+      <span class="skill-tag">Flutter</span>
+      <span class="skill-tag">Dart</span>
+      <span class="skill-tag">MySQL</span>
+      <span class="skill-tag">Git</span>
+      <span class="skill-tag">GitHub</span>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-
-   <div class="project">
-  <h3>Portfolio Website</h3>
-  <p>
-    A personal portfolio website designed and developed to showcase my technical
-    skills, projects, and career direction as a final-year IT student.
-  </p>
-  <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-</div>
-
-   <div class="project">
-  <h3>Student Management System (In Progress)</h3>
-  <p>
-    A web-based system for managing student information, including adding,
-    viewing, and searching student records. The project focuses on applying
-    backend logic and database design principles.
-  </p>
-  <p><strong>Tech:</strong> JavaScript, C#, MySQL</p>
-</div>
+  <section id="projects" class="card">
+    <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+    
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p class="project-status">Completed</p>
+      <p>A personal portfolio website designed and developed to showcase my technical skills, projects, and career direction.</p>
+      <div class="project-tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </div>
 
     <div class="project">
-  <h3>Student Budget Tracker App (Planned)</h3>
-  <p>
-    A mobile application designed to help students track daily expenses and
-    understand their spending habits using a simple and user-friendly interface.
-  </p>
-  <p><strong>Tech:</strong> Flutter & Dart</p>
-</div>
+      <h3>Student Management System</h3>
+      <p class="project-status in-progress">In Progress</p>
+      <p>A web-based system for managing student information, including adding, viewing, and searching student records.</p>
+      <div class="project-tech">
+        <span>JavaScript</span>
+        <span>C#</span>
+        <span>MySQL</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Student Budget Tracker App</h3>
+      <p class="project-status planned">Planned</p>
+      <p>A mobile application designed to help students track daily expenses and understand their spending habits.</p>
+      <div class="project-tech">
+        <span>Flutter</span>
+        <span>Dart</span>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: sithembinkosicosby@gmail.com</p>
-    <p>GitHub: https://github.com/cosby40</p>  
-    <p>LinkedIn: https://www.linkedin.com/in/sithembinkosi-cosby-3a3596388?utm_source=share&utm_campaign=share_via&utm_content=profiile&utm_medium=ios_app</p>  
-    <p>Call: 072 581 1906</p>
+  <section id="contact" class="card">
+    <h2><i class="fas fa-envelope"></i> Contact</h2>
+    <div class="contact-links">
+      <a href="mailto:sithembinkosicosby@gmail.com" class="contact-item">
+        <i class="fas fa-envelope"></i> sithembinkosicosby@gmail.com
+      </a>
+      <a href="https://github.com/cosby40" target="_blank" class="contact-item">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/sithembinkosi-cosby-3a3596388" target="_blank" class="contact-item">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="tel:+2725811906" class="contact-item">
+        <i class="fas fa-phone"></i> 072 581 1906
+      </a>
+    </div>
   </section>
 </main>
+
+<footer>
+  <p>© 2024 Sithembinkosi Cosby Magezi. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
